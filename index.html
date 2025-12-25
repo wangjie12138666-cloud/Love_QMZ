@@ -1,73 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>QMZ Christmas Tree</title>
+<title>For QMZ ❤️</title>
+
 <style>
-  body {
-    margin: 0;
-    height: 100vh;
-    background: radial-gradient(circle at top, #163a4a, #08141a);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    color: white;
+body{
+  margin:0;
+  height:100vh;
+  background: radial-gradient(circle at top, #163a4a, #08141a);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color:white;
+}
+
+.tree{
+  text-align:center;
+  line-height:1.25;
+}
+
+.star{
+  font-size:36px;
+  animation: twinkle 1.5s infinite alternate;
+}
+
+.heart{
+  font-size:22px;
+  animation: glow 2s infinite alternate;
+}
+
+.trunk{
+  margin-top:6px;
+  font-size:20px;
+}
+
+.signature{
+  margin-top:14px;
+  font-size:18px;
+  letter-spacing:2px;
+  color:#ffb3c6;
+}
+
+@keyframes glow{
+  from{
+    text-shadow:0 0 5px #ff4d6d;
   }
-  .container {
-    display: flex;
-    align-items: flex-end;
+  to{
+    text-shadow:0 0 20px #ff9aa2;
   }
-  .side-image {
-    width: 150px;
-    margin: 0 20px;
-  }
-  .tree {
-    text-align: center;
-    line-height: 1.25;
-  }
-  .star {
-    font-size: 36px;
-    animation: twinkle 1.5s infinite alternate;
-  }
-  .heart {
-    font-size: 22px;
-    animation: glow 2s infinite alternate;
-  }
-  .signature {
-    margin-top: 14px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #ffb3c6;
-  }
-  @keyframes glow {
-    from { text-shadow: 0 0 5px #ff4d6d; }
-    to { text-shadow: 0 0 20px #ff9aa2; }
-  }
-  @keyframes twinkle {
-    from { opacity: 0.6; }
-    to { opacity: 1; }
-  }
+}
+
+@keyframes twinkle{
+  from{opacity:0.6;}
+  to{opacity:1;}
+}
 </style>
 </head>
+
 <body>
-  <div class="container">
-    <!-- 左侧图片 -->
-    <img src="https://github.com/wangjie12138666-cloud/Love_QMZ/blob/277f5db7ada8e5527b030a8ec4f4316f8e85ecc8/0adae78319de29408a30a5c237617924.jpg?raw=true" class="side-image" alt="Left Image">
+  <div class="tree">
+    <div class="star">⭐</div>
 
-    <!-- 圣诞树 -->
-    <div class="tree">
-      <div class="star">⭐</div>
-      <div class="heart">❤️</div>
-      <div class="heart">❤️ ❤️</div>
-      <div class="heart">❤️ ❤️ ❤️</div>
-      <div class="heart">❤️ ❤️ ❤️ ❤️</div>
-      <div class="heart">❤️ ❤️ ❤️ ❤️ ❤️</div>
-      <div class="signature">Merry Christmas, QMZ ❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️ ❤️</div>
+    <div class="heart">❤️ ❤️ ❤️</div>
+    <div class="heart">❤️ ❤️ ❤️ ❤️</div>
+    <div class="heart">❤️ ❤️ ❤️ ❤️ ❤️</div>
+    <div class="heart">❤️ ❤️ ❤️ ❤️ ❤️ ❤️</div>
+    <div class="heart">❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️</div>
+    <div class="heart">❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️</div>
+
+    <div class="trunk">🟫🟫</div>
+
+    <div class="signature">
+      Merry Christmas, <strong>QMZ</strong> ❤️
     </div>
-
-    <!-- 右侧图片 -->
-    <img src="https://github.com/wangjie12138666-cloud/Love_QMZ/blob/main/e49a17f5e3394d0af8c79031aed033f3.jpg?raw=true" class="side-image" alt="Right Image">
   </div>
 </body>
 </html>
